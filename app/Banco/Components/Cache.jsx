@@ -6,7 +6,7 @@ export default function Saldo({ saldo }) {
         <View style={styles.container}>
             <Image
                 style={styles.logo}
-                source={require('../../../../assets/images/bancointer.png')}
+                source={require('../../../assets/images/bancointer.png')}
             />
             <Text style={styles.title}>Saldo:</Text>
             <Text style={styles.value}>R$ {saldo.toFixed(2)}</Text>

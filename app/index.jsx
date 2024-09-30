@@ -6,22 +6,57 @@ import Header from './Header';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Header style={styles.header}/>
+      <Header style={styles.header} />
       <View style={styles.buttonContainer}>
-        <Link href="./Banco">
-          <Button title="Santander" onPress={() => { }} />
+        <Link href="./Banco/Banco">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Banco" color="#b0c4de" />
+          </View>
         </Link>
-        <Link href="./Calculadora">
-          <Button title="Calculadora" onPress={() => { }} />
+        <Link href="./Calculadora/Calculadora">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Calculadora" color="#b0c4de" />
+          </View>
         </Link>
-        <Link href="./SingUp">
-          <Button title="SingUp" onPress={() => { }} />
+        <Link href="./Calculadora2/Calcula">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Calculadora 2" color="#b0c4de" />
+          </View>
         </Link>
-        <Link href="./Pokemon">
-          <Button title="Pokemon" onPress={() => { }} />
+        <Link href="./Ifome/index">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Calculadora 2" color="#b0c4de" />
+          </View>
         </Link>
-        <Link href="./SobreMim">
-          <Button title="SobreMim" onPress={() => { }} />
+        <Link href="./Lista-tarefa/Lista">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Lista de Tarefa" color="#b0c4de" />
+          </View>
+        </Link>
+        <Link href="./Navegacao/Navega">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Sobre mim" color="#b0c4de" />
+          </View>
+        </Link>
+        <Link href="./Pokemon/Pokemon">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Pokemon" color="#b0c4de" />
+          </View>
+        </Link>
+        <Link href="./Registro/Registro">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Registro" color="#b0c4de" />
+          </View>
+        </Link>
+        <Link href="./Seletor/Picker">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Seletor" color="#b0c4de" />
+          </View>
+        </Link>
+        <Link href="./Splash-screen/Splash">
+          <View style={styles.buttonWrapper}>
+            <Button title="App Splash Screen" color="#b0c4de" />
+          </View>
         </Link>
       </View>
     </View>
@@ -35,13 +70,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonContainer: {
-    flexDirection: 'column', // Coluna para empilhar botões verticalmente
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: 10, // Espaço entre os botões (opcional)
+    gap: 10,
+  },
+  buttonWrapper: {
+    borderRadius: 25, // Arredondar o botão
+    borderWidth: 2,   // Borda ao redor
+    borderColor: '#000000', // Cor da borda
+    overflow: 'hidden', // Garante que o botão siga o arredondamento da View
+    marginVertical: 5,
+    width: 200,
   },
   header: {
     flex: 1,
     justifyContent: 'center',
-  }
+  },
 });

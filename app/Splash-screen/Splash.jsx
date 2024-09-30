@@ -3,7 +3,7 @@ import { StyleSheet, Image, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default function App() {
-  const image = require('../../../assets/images/download.png')
+  const image = require('../../assets/images/download.png')
   return (
     <View style={styles.container}>
       <LinearGradient
