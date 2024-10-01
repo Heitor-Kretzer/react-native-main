@@ -23,9 +23,9 @@ export default function App() {
             <Button title="App Calculadora 2" color="#b0c4de" />
           </View>
         </Link>
-        <Link href="./Ifome/index">
+        <Link href="./Ifome">
           <View style={styles.buttonWrapper}>
-            <Button title="App Calculadora 2" color="#b0c4de" />
+            <Button title="App IFome" color="#b0c4de" />
           </View>
         </Link>
         <Link href="./Lista-tarefa/Lista">
