@@ -4,8 +4,8 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 const Header = () => {
   return (
     <View style={styles.headerContainer}>
-      <Text style={styles.headerText}>Heitor Kretzer | 3º Ano C</Text>
       <Image></Image>
+      <Text style={styles.headerText}>Heitor Kretzer | 3º Ano C</Text>
     </View>
   );
 };
