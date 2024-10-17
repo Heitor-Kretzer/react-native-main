@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { View, StyleSheet, Text, Image, Button, TouchableOpacity, Linking } from "react-native";
 import { CameraView, useCameraPermissions } from "expo-camera";
-import * as MediaLibrary from 'expo-media-library';
+import * as MediaLibrary  from 'expo-media-library';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
 export default Camera = () => {
@@ -71,7 +71,7 @@ export default Camera = () => {
                         <TouchableOpacity onPress={() => { salvarFoto() }}>
                             <Image
                                 style={styles.icon}
-                                source={require('../../assets/delete.png')}
+                                source={require('../../assets/images/dele.jpg')}
                             />
                         </TouchableOpacity>
                     </View>
@@ -88,7 +88,7 @@ export default Camera = () => {
                                 <TouchableOpacity style={styles.button} onPress={() => setModoQrCode(!modoQrCode)}>
                                     <Image
                                         style={styles.icon}
-                                        source={require('../../assets/camera.png')}
+                                        source={require('../../assets/images/camera.png')}
                                     />
                                 </TouchableOpacity>
                             </View>
@@ -100,19 +100,19 @@ export default Camera = () => {
                                 <TouchableOpacity style={styles.button} onPress={() => mudarCamera()}>
                                     <Image
                                         style={styles.icon}
-                                        source={require('../../assets/mudar.png')}
+                                        source={require('../../assets/images/mudar.png')}
                                     />
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.button} onPress={() => tirarFoto()}>
                                     <Image
                                         style={styles.icon}
-                                        source={require('../../assets/tirarfoto.png')}
+                                        source={require('../../assets/images/tirarfoto.png')}
                                     />
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.button} onPress={() => setModoQrCode(!modoQrCode)}>
                                     <Image
                                         style={styles.icon}
-                                        source={require('../../assets/codigo.png')}
+                                        source={require('../../assets/images/codigo.png')}
                                     />
                                 </TouchableOpacity>
                             </View>

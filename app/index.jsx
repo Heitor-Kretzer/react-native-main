@@ -64,6 +64,11 @@ export default function App() {
               <Button title="App Camera" color="#b0c4de" />
             </View>
           </Link>
+          <Link href="./Memoria">
+            <View style={styles.buttonWrapper}>
+              <Button title="App Memoria" color="#b0c4de" />
+            </View>
+          </Link>
         </View>
       </ScrollView>
     </View>
