@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         marginBottom: 15,
     },
     titulo: {
-        fontSize: 25,
+        fontSize: 27,
         fontWeinht: 'bolder',
         color: '#222',
         marginBottom: 10,
